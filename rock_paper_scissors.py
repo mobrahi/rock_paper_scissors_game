@@ -1,6 +1,8 @@
 # rock_paper_scissors.py
 import random
 import time
+import os
+from playsound import playsound
 
 class RockPaperScissors:
     def __init__(self):
@@ -155,6 +157,19 @@ class RockPaperScissors:
             else:
                 print("\n🔄 Starting new match...")
                 time.sleep(1)
+           
+    # def play_sound(self, sound_type):
+    #     """Play sound effects (optional)"""
+    #     try:
+    #         sounds = {
+    #             'win': 'win.mp3',
+    #             'lose': 'lose.mp3',
+    #             'tie': 'tie.mp3'
+    #         }
+    #         # Only if you have sound files
+    #         # playsound(f'sounds/{sounds[sound_type]}')
+    #     except:
+    #         pass  # Silently fail if no sounds
 
 if __name__ == "__main__":
     game = RockPaperScissors()
